@@ -134,6 +134,12 @@ a:focus,
 	color: #eee;
 	font-weight: 400;
 	letter-spacing: 1px;
+
+}
+
+#menu a.navbar-brand:before {
+
+	content: 'Hospitality Janitorial & Maintenance';
 }
 
 #menu.navbar-default .navbar-nav>li>a {
@@ -247,10 +253,17 @@ a:focus,
 	letter-spacing: -1px;
 }
 
+.intro-text strong:before {
+	content: 'HJM'
+
+}
+
 .intro span {
 	color: #1d8ece;
 	font-weight: 600;
 }
+
+
 
 .intro p {
 	color: #fff;
@@ -283,6 +296,7 @@ header .intro-text {
 }
 
 #about img {
+	margin-top: 100px;
 	display: inline-block;
 	border-radius: 100px 0 100px 0;
 	box-shadow: -15px 0 #1d8ece;
@@ -613,5 +627,42 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
+	#menu a.navbar-brand:before {
+		content: 'HJM';
+	}
+
+	.intro-text h1 {
+		font-size: 50px;
+	}
+
+	.intro-text strong:before {
+		content: 'Hospitality';
+		color: #fff;
+		font-size: 50px;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 10px;
+		letter-spacing: -1px;
+
+	}
+
+	.intro-text span {
+		display: none;
+	}
+
+	.intro p {
+		color: #1d8ece;
+		font-size: 24px;
+		font-weight: 300;
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+
+	header .intro-text {
+		padding-top: 200px;
+		padding-bottom: 200px;
+		text-align: center;
+	}
+
 
 }
