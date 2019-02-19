@@ -295,6 +295,11 @@ header .intro-text {
 	margin-top: 20px;
 }
 
+#about span {
+	font-weight: 600;
+	font-style: italic
+}
+
 #about img {
 	margin-top: 100px;
 	display: inline-block;
@@ -305,6 +310,7 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin: 15px 0 30px;
+	text-indent: 40px;
 }
 
 /* Services Section */
@@ -656,6 +662,7 @@ label {
 		font-weight: 300;
 		margin-top: 10px;
 		margin-bottom: 40px;
+		font-style: italic;
 	}
 
 	header .intro-text {
@@ -664,5 +671,7 @@ label {
 		text-align: center;
 	}
 
-
+	#about img {
+		margin-top: 0;
+	}
 }
