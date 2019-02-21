@@ -338,6 +338,23 @@ header .intro-text {
 	font-size: 20px;
 }
 
+#services .main-services-a {
+	font-weight: 900;
+	font-size: 28px;
+	color: #1d8ece;
+	font-style: italic;
+}
+
+#services .sub-services {
+	padding: 30px 60px  0 60px;
+	font-weight: 700;
+}
+.sub-services-a {
+	
+	color: #777;
+	font-style: italic;
+}
+
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
