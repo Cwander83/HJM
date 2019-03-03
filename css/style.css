@@ -136,8 +136,9 @@ a:focus,
 }
 
 #menu a.navbar-brand:before {
-  content: 'Hospitality Janitorial & Maintenance';
+  content: 'HJM';
 }
+
 
 #menu.navbar-default .navbar-nav>li>a {
   text-transform: uppercase;
@@ -147,7 +148,7 @@ a:focus,
   padding: 5px 0;
   border: 2px solid transparent;
   letter-spacing: 0.5px;
-  margin: 10px 15px 0 15px;
+  margin: 10px 10px 0 10px;
 }
 
 #menu.navbar-default .navbar-nav>li>a:hover {
