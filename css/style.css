@@ -329,7 +329,7 @@ header .intro-text {
 }
 
 #about img {
- 
+
   border: solid 1px rgb(221, 221, 221);
   border-radius: 100px 0 100px 0;
   box-shadow: -15px 0 #1d8ece;
@@ -618,7 +618,16 @@ label {
     text-align: center;
   }
 
-  #about img {
+  #about .img-responsive {
     margin-top: 0;
+    width: 310px;
   }
+}
+@media only screen and (max-width: 1200px) {
+  
+   #about .img-responsive {
+    
+     margin-top: 0;
+     width: 310px;
+   }
 }
