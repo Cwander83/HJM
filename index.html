@@ -137,11 +137,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-6 text-center">
-            <img
-              src="img/intro-bg.jpg"
-              class="img-responsive"
-              alt="clean room"
-            />
+            <img src="img/logo.jpg" class="img-responsive" alt="clean room" />
           </div>
           <div class="col-xs-12 col-md-6">
             <div class="about-text">
@@ -224,7 +220,7 @@
           </div>
           <div class="col-xs-12 col-sm-3 service">
             <img
-              src="img/office-design.jpg"
+              src="img/hotel-room.jpg"
               class="img-responsive"
               alt="Project Title"
             />
@@ -392,11 +388,17 @@
         </div>
         <div class="col-md-8">
           <h3>Request a quote</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
+          <form
+            name="sentMessage"
+            id="contactForm"
+            action="https://formspree.io/Hjmjanitorialservice@gmail.com"
+            method="POST"
+          >
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <input
+                    name="name"
                     type="text"
                     id="name"
                     class="form-control"
@@ -409,6 +411,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
+                    name="phone"
                     type="phone"
                     id="phone"
                     class="form-control"
@@ -423,11 +426,11 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
+                    name="address"
                     type="text"
                     id="address"
                     class="form-control"
                     placeholder="Address"
-                    required="required"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -435,11 +438,11 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
+                    name="city"
                     type="city"
                     id="city"
                     class="form-control"
                     placeholder="City"
-                    required="required"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -449,11 +452,11 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
+                    name="zipcode"
                     type="zipcode"
                     id="zipcode"
                     class="form-control"
                     placeholder="Zipcode"
-                    required="required"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -468,6 +471,7 @@
                 placeholder="Message"
                 required
               ></textarea>
+              <input type="text" name="_gotcha" style="display:none" />
               <p class="help-block text-danger"></p>
             </div>
             <div id="success"></div>
@@ -497,9 +501,7 @@
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="js/contact_me.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>

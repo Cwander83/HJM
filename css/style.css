@@ -310,7 +310,7 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 120px 0;
-  
+
 }
 
 #about h3 {
@@ -329,10 +329,12 @@ header .intro-text {
 }
 
 #about img {
-  margin-top: 100px;
-  display: inline-block;
+ 
+  border: solid 1px rgb(221, 221, 221);
   border-radius: 100px 0 100px 0;
   box-shadow: -15px 0 #1d8ece;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 #about p {
@@ -402,6 +404,7 @@ header .intro-text {
   /* line-height: 5em; */
 
 }
+
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
