@@ -332,7 +332,7 @@ header .intro-text {
 
   border: solid 1px rgb(221, 221, 221);
   border-radius: 100px 0 100px 0;
-  box-shadow: -15px 0 #1d8ece;
+  /* box-shadow: -15px 0 #1d8ece; */
   display: inline-block;
   margin-top: 50px;
 }
@@ -356,7 +356,7 @@ header .intro-text {
 #services img {
   width: 300px;
   border-radius: 75px 0 75px 0;
-  box-shadow: 15px 0 #1d8ece;
+  /* box-shadow: 15px 0 #1d8ece; */
 }
 
 #services h3 {
