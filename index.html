@@ -339,6 +339,8 @@
                     class="form-control"
                     placeholder="Name"
                     required="required"
+                    minlength="2"
+                    
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -378,6 +380,7 @@
                     id="city"
                     class="form-control"
                     placeholder="City"
+                    minlength="3"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -392,6 +395,7 @@
                     id="zipcode"
                     class="form-control"
                     placeholder="Zipcode"
+                    pattern="(\d{5}([\-]\d{4})?)"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
