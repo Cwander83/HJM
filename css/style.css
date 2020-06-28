@@ -128,7 +128,7 @@ a:focus,
 }
 
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0.05);
+	background-color: rgba(54, 54, 54, 0.3);
 	border-color: rgba(231, 231, 231, 0);
 }
 
@@ -176,16 +176,31 @@ a:focus,
 
 .navbar-toggle {
 	border-radius: 0;
+	border: none;
+	padding: 1px 2px;
+	margin: 0 auto;
+	float: none;
+	height: 30px;
+}
+.navbar-toggle:active {
+	color: #1d8ece !important;
+	border: none;
+}
+.navbar-toggle:active,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+	background-color: transparent !important;
+	border: none;
 }
 
-.navbar-default .navbar-toggle:hover,
+/* .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
 	background-color: #1d8ece;
 	border-color: #1d8ece;
-}
+} */
 
-.navbar-default .navbar-toggle:hover > .icon-bar {
-	background-color: #fff;
+.navbar-toggle i {
+	font-size: 26px;
 }
 
 .section-title {
@@ -224,7 +239,7 @@ a:focus,
 	display: table;
 	width: 100%;
 	padding: 0;
-	background-image: url('../img/dan-gold-clBJIFl1p0E-unsplash.jpg');
+	background-image: url('../images/images/dan-gold-clBJIFl1p0E-unsplash.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -283,7 +298,7 @@ header .intro-text {
 
 #about .about-text {
 	margin-left: 10px;
-	margin-top: 20px;
+	margin-top: 60px;
 }
 
 #about span {
@@ -348,6 +363,26 @@ header .intro-text {
 	font-style: italic;
 }
 
+/* Equipment Section */
+
+#equipment {
+	padding: 120px 0;
+}
+
+#equipment .panel .panel-heading {
+	cursor: pointer;
+	background-color: #03695d;
+	color: white;
+}
+#equipment .panel .panel-heading h4 {
+	font-size: 18px;
+	padding: 1px;
+}
+#equipment .panel .panel-body img {
+	width: 200px;
+	height: auto;
+}
+
 /* Testimonials Section
 #testimonials {
   padding: 120px 0;
@@ -369,7 +404,7 @@ header .intro-text {
 /* Testimonials Section */
 #testimonials {
 	padding: 100px 0;
-	/* background: #f6f6f6; */
+	background: #f6f6f6;
 }
 
 #testimonials i {
@@ -417,7 +452,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
-	background: #f6f6f6;
+	/* background: #f6f6f6; */
 }
 
 #contact form {
@@ -589,12 +624,12 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
-	#menu a.navbar-brand:before {
-		content: 'HJM';
+	#menu {
+		background-color: #363636 !important;
 	}
 
 	.intro-text h1 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.intro-text strong:before {
@@ -614,10 +649,11 @@ label {
 	.intro p {
 		color: #1d8ece;
 		font-size: 24px;
-		font-weight: 300;
+		font-weight: 600;
 		margin-top: 10px;
 		margin-bottom: 40px;
 		font-style: italic;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 	}
 
 	header .intro-text {
@@ -637,11 +673,73 @@ label {
 		width: 310px;
 	}
 }
-@media only screen and (max-width: 764px) {
+
+@media only screen and (max-width: 800px) {
+	#menu a.navbar-brand {
+		display: none;
+	}
+	#menu .navbar-header {
+		text-align: center;
+		margin: 12px 0;
+	}
+
+	#menu.navbar-default .navbar-nav li {
+		margin: 0 auto;
+		width: auto;
+	}
+	#menu.navbar-default .navbar-nav > li a {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#menu .navbar-toggle {
+		display: inline-block;
+	}
 	#apply-link {
 		display: block;
 	}
 	.hiringBtn {
 		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	#menu.navbar-default {
+		background-color: rgb(54, 54, 54);
+	}
+	.container{
+		margin: 0 auto;
+	}
+	.navbar-header {
+		float: none;
+	}
+	.navbar-left,
+	.navbar-right {
+		float: none !important;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav > li {
+		float: none;
+	}
+
+	.collapse.in {
+		display: block !important;
 	}
 }
