@@ -1,9 +1,6 @@
-
 function main() {
 	(function () {
-		
-
-		'use strict';
+		('use strict');
 
 		$('a.page-scroll').click(function () {
 			if (
@@ -28,7 +25,7 @@ function main() {
 		});
 
 		// Show Menu on Book
-		$(window).bind('scroll', function () {
+		$(window).scroll(function () {
 			var navHeight = $(window).height() - 500;
 			var navWidth = $(window).width();
 
@@ -41,10 +38,10 @@ function main() {
 				}
 			}
 		});
-		$(window).bind(() => {
-			const navWidth = $(window).width();
-			if (navWidth < 800) $('.navbar-nav').removeClass('navbar-right');
-		});
+		// $(window).on(() => {
+		// 	const navWidth = $(window).width();
+		// 	if (navWidth < 800) $('.navbar-nav').removeClass('navbar-right');
+		// });
 
 		$('body').scrollspy({
 			target: '.navbar-default',
@@ -60,11 +57,56 @@ function main() {
 			}
 		});
 
-		$('#headingOne').click(()=> {
-			console.log(`${JSON.stringify(bissell.vacuums[0])}`);
-			
-		})
+		// TODO: pull data from bissell object
+		const productsBoxFunc = (array) => {
+			array.forEach((obj, index) => {
+				//console.log(obj.model);
+				let productImage = $('<img />', {
+					class: 'product-image',
+					src: obj.imageLocation,
+					alt: obj.model,
+				});
 
+				//console.log(productImage);
+				let productTitle = `<h3>${obj.model}</h3>`;
+
+				$('#product-box').append(productTitle);
+				$('#product-box').append(productImage);
+			});
+		};
+
+
+		$('.product-btn').click(function () {
+			// ? empties product-box
+			// TODO: needs to make it dynamic so if button hit twice it doesn't have to reload everytime
+			$('#product-box').empty();
+
+			// finds value of product btn clicked
+			let value = $(this).attr('value');
+
+			// convert value to a number and find which btn was clicked
+			// passing in which array from bissell obj to function
+			switch (Number(value)) {
+				case 100:
+					let vacuums = bissell.vacuums;
+					productsBoxFunc(vacuums);
+					break;
+
+				case 101:
+					let powerSweepers = bissell.powerSweepers;
+					productsBoxFunc(powerSweepers);
+					break;
+
+				case 100:
+					break;
+
+				case 100:
+					break;
+
+				default:
+					break;
+			}
+		});
 
 		// // Portfolio isotope filter
 		// $(window).load(function() {
@@ -99,7 +141,6 @@ function main() {
 		//         effect: 'slideDown',
 		//         keyboardNav: true,
 		//     });
-	
 	})();
 }
 main();
